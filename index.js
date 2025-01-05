@@ -96,7 +96,7 @@ async function run() {
       const updatedTutorDoc = req.body;
 
       // akhane update turor doc a data set kora holo
-      
+
       const TutorDoc = {
         $set: {
           language: updatedTutorDoc.language,
@@ -146,6 +146,8 @@ async function run() {
       const id = req.params.id;
       const filter = { _id: new ObjectId(id) };
 
+      // akhane review add kore hoice
+      
       const updatedDoc = {
         $inc: { status: 1 },
       };
