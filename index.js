@@ -34,7 +34,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    // await client.connect();
+    await client.connect();
 
     const LangaugesCollection = client.db('Learn_Langauge').collection('Langauges');
     const selectedTutorCollection = client.db('Learn_Langauge').collection('selected_Tutor');
