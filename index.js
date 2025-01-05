@@ -13,8 +13,6 @@ app.use(express.json());
 
 
 
-
-
 // mongoDB Data Base
 
 
@@ -153,9 +151,6 @@ async function run() {
       const result = await LangaugesCollection.updateOne(filter, updatedDoc);
       res.send(result);
     });
-
-
-
 
 
 
